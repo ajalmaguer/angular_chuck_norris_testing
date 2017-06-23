@@ -1,14 +1,14 @@
 import { ChuckPage } from './app.po';
 
 describe('chuck App', function() {
-  let page: ChuckPage;
+	let page: ChuckPage;
 
-  beforeEach(() => {
-    page = new ChuckPage();
-  });
+	beforeEach(() => {
+		page = new ChuckPage();
+	});
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+	it('should display message saying app works', () => {
+		page.navigateTo();
+		expect(page.getParagraphText()).toEqual('app works!');
+	});
 });

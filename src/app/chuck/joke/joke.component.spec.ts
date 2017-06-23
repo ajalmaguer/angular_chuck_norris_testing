@@ -53,7 +53,7 @@ describe('Component: Joke Component', () => {
 		fixture.detectChanges();
 
 		let el = de.query(By.css('.jokeCssClass')).nativeElement;
-		expect(el.textContent).toEqual('FAKE JOKE');
+		expect(el.textContent).toContain('FAKE JOKE')
 	});
 });
 
